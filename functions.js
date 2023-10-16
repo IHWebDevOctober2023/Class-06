@@ -64,3 +64,25 @@ arrayOfNames.forEach((name)=>{
     const numberOfLetters = name.length;
     console.log(`${name} has ${numberOfLetters} letters!`);
 })
+
+// ASYNCHRONOUS FUNCTIONS
+
+// this is running after 4 seconds (4000ms)
+setTimeout(()=>{
+    console.log("THIS IS IN THE SETTIMEOUT");
+}, 4000)
+
+console.log("THIS IS OUTSIDE THE SETTIMEOUT");
+
+// The code runs every 2 seconds (2000ms)
+/* setInterval(()=>{
+    console.log("This is inside the setInterval");
+}, 2000) */
+
+const sayHiParrot = setInterval(()=>{
+    console.log("HI, I'm a parrot!");
+}, 2000);
+
+setTimeout(()=>{
+    clearInterval(sayHiParrot)
+}, 10000)
