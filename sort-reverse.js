@@ -58,3 +58,9 @@ array.sort((a, b) => a - b)
 wordsArray.sort((a,b)=> a.length - b.length)
 
 console.log(wordsArray);
+
+function myFunction(){
+    console.log(arguments);
+}
+// even if we don't have any parameters in the function declaration. We can check the arguments.
+myFunction(23,[2.32,54,444,5], "strinsadsadasads")
