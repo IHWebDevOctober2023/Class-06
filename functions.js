@@ -85,4 +85,5 @@ const sayHiParrot = setInterval(()=>{
 
 setTimeout(()=>{
     clearInterval(sayHiParrot)
-}, 10000)
+}, 10000);
+
